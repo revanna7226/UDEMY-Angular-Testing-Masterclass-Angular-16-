@@ -1,0 +1,8 @@
+Angular Testing Masterclass (Angular 16)
+
+Github URL: https://github.com/angular-university/angular-testing-course
+
+Commands to run application.
+npm install
+npm run server
+npm start
