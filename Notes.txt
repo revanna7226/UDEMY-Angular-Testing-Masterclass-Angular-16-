@@ -1,8 +1,52 @@
-Angular Testing Masterclass (Angular 16)
+Angular Testing Masterclass (Angular 18)
 
 Github URL: https://github.com/angular-university/angular-testing-course
+
+git checkout -b 1-start
+
+Pre-requisites:
+Node 18
+Please use this version of node, which is compatible with the package-lock.json available in the repository. This will avoid any semantic versioning issues, and ensure you a smooth installation and course taking experience.
 
 Commands to run application.
 npm install
 npm run server
 npm start
+
+npm test / ng test
+npm test --no-watch
+
+Unit Testing Framework: Jasmine - Behavior-driven Javascript Test framework.
+Test Runner/ Test Flatform: Karma
+Unit Tests -> Test specifications -> Test Specs
+app.component.spec.ts -> unit test file
+
+
+In the next few component tests, we are going to be using certain CSS classes to query the DOM and retrieve elements from it, in order to run test assertions.
+Some of those CSS classes have changed over the years, with newer releases of Angular Material.
+All the content in the video still applies and is valid for the latest Angular
+But it you are coding along and want to run the tests yourself, you should use the CSS classes on the right, instead of the ones on the left:
+
+mat-tab-label => mdc-tab
+mat-tab-body-active  => mat-mdc-tab-body-active
+mat-card-title  => mat-mdc-card-title
+
+Other than the name of CSS classes, everything in the course remains valid.
+
+// component types
+
+- Presentational component - CoursesCardListComponent
+- Smarter / Container Component - HomeComnponent
+
+
+// faskAsync -> used to fake http or async calls
+// async -> used to make calls to real http endpoints
+
+Installation of cypress
+npm install --dev cypress
+
+npm run cypress:open
+
+// Deploy to Travis-CI server
+
+https://travis-ci.org
